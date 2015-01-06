@@ -3,7 +3,9 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Deploy to Heroku
+Deploy to Heroku !
+
+Add SSH key
 
 Things you may want to cover:
 
