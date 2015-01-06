@@ -7,7 +7,7 @@
 # Ignore bundler config.
 /.bundle
 .vagrant
-/vagrant/precise64.box
+/vagrant/package.box
 
 # Ignore all logfiles and tempfiles.
 /log/*
