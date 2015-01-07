@@ -146,6 +146,8 @@ GEM
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
     pg (0.18.0)
+    prickle (0.1.0)
+      capybara
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -280,6 +282,7 @@ DEPENDENCIES
   launchy
   less-rails
   pg
+  prickle
   rails (= 4.2.0)
   rspec-rails
   sass-rails (~> 5.0)

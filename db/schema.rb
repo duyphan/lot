@@ -11,10 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150106040811) do
+ActiveRecord::Schema.define(version: 20150107032645) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "districts", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "zip"
+    t.integer  "code"
+    t.integer  "region_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "lotteries", force: :cascade do |t|
+    t.datetime "open_date"
+    t.string   "special"
+    t.string   "first"
+    t.string   "second"
+    t.string   "third"
+    t.string   "fourth"
+    t.string   "fifth"
+    t.string   "sixth"
+    t.string   "seventh"
+    t.string   "eighth"
+    t.integer  "district_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "regions", force: :cascade do |t|
     t.string   "name"
