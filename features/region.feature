@@ -3,12 +3,14 @@ Feature: Manage Regions
   As an author
   I want to create and manage regions
   
+  @region
   Scenario: Regions List
     Given I have regions titled Mien Bac, Mien Nam
     When I go to the list of regions
     Then I should see "Mien Bac"
     And I should see "Mien Nam"
-  
+    
+  @region
   Scenario: Create Valid Region
     Given I have no regions
     And I am on the list of regions
@@ -19,7 +21,8 @@ Feature: Manage Regions
     Then I follow "Back"
     And I should see "Mien Bac"
     And I should see "123132"
-    
+
+  @region
   Scenario: Delete Region
     Given I have "Mien Bac" regions
     And I am on the list of regions
