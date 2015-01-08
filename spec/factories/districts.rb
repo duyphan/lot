@@ -1,7 +1,11 @@
+require 'faker'
+
 FactoryGirl.define do
-  factory :district do
-    name { Faker::Name.name }
-		zip { Faker::Address.zip }
-		code { Faker::Address.zip_code }
+  factory :district do |f|
+    f.name { Faker::Name.name }
+		f.zip { Faker::Address.zip }
+		f.code { Faker::Address.zip_code }
+
+		f.association :region
   end
 end
