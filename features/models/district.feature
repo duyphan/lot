@@ -16,13 +16,13 @@ Feature: Home page
     And I am on the list of districts
     When I follow "New"
     And I fill in "Name" with "Hue"
-    And I fill in "Zip code" with "0542"
-    And I fill in "Portal Code" with "054"
+    And I fill in "Zip" with "0542"
+    And I fill in "Code" with "054"
     And I press "Create District"
     Then I follow "Back"
     And I should see "Hue"
-    And I should see "0542"
-    And I should see "054"
+    And I should see "542"
+    And I should see "54"
 
   @district
   Scenario: Delete District
