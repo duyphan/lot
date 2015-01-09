@@ -4,6 +4,12 @@ Given(/^I have regions titled (.+)$/) do |titles|
   end
 end
 
+Given(/^I have "([a-zA-Z_]+)" existed:$/) do |model, table| 
+  table.hashes.each do |row|
+    FactoryGirl.create(model.singularize.downcase.to_sym, row)
+  end
+end
+
 Given(/^I have no regions$/) do
   Region.delete_all
 end
@@ -14,10 +20,6 @@ end
 
 Given(/^I am on the list of regions$/) do
   visit regions_path
-end
-
-When(/^I follow "(.*?)"$/) do |link|
-  click_link link
 end
 
 When(/^I fill in "(.*?)" with "(.*?)"$/) do |arg1, arg2|
@@ -39,8 +41,4 @@ end
 
 When(/^I confirm the browser dialog$/) do
   page.driver.browser.switch_to.alert.accept
-end
-
-Then(/^I should not see "(.*?)"$/) do |name|
-  page.should_not have_content(name)
 end

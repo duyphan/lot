@@ -52,6 +52,17 @@
             <li><%= link_to "Giải mộng", "/path2"  %></li>
             <li><%= link_to "Tôi là ai? :)", "/path3"  %></li>
           </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <% if current_user %>
+              <% if administrator? %>
+                <li><%= link_to 'Users', users_path %></li>
+              <% end %>
+              <li><%= link_to 'Log Out', logout_path %></li>
+            <% else %>
+              <li><%= link_to 'Log In', new_session_path %></li>
+            <% end %>
+          </ul>
         </div>
       </div>
     </div>

@@ -5,7 +5,10 @@ Feature: Manage Regions
   
   @region
   Scenario: Regions List
-    Given I have regions titled Mien Bac, Mien Nam
+    Given I have "Regions" existed:
+        | name          | portal_code     |
+        | Mien Bac      | 1234            |
+        | Mien Nam      | 1234            |
     When I go to the list of regions
     Then I should see "Mien Bac"
     And I should see "Mien Nam"
