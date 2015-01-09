@@ -22,7 +22,6 @@
         <td><%= district.zip %></td>
         <td><%= district.code %></td>
         <td><%= district.region_id %></td>
-        <td><%=l district.created_at %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
                       edit_district_path(district), :class => 'btn btn-default btn-xs' %>
