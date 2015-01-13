@@ -30,3 +30,19 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+* List CODE : 
+
+['TTH', 'PY', 'DLK', 'QNM', 'DNG', 'KH', 'BDI', 'QB', 'QT', 'GL', 'NT', 'DNO', 'KH', 'KT', 'HCM', 'CM', 'DT', 'BL', 'BT', 'VT', 'CT', 'DN', 'ST', 'AG', 'BTH', 'TN', 'BD', 'TV', 'VL', 'BP', 'HG', 'LA', 'KG', 'LD', 'TG']
+
+* List Region
+regions = {
+	"MB" => "Mien Bac",
+	"MT" => "Mien Trung",
+	"MN" => "Mien Nam"
+}
+
+regions.each do |code, region| 
+	region = Region.new({:name => region, :portal_code => code})
+	region.save!
+end
