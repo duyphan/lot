@@ -1,7 +1,21 @@
 <div class="main-content">
-<h1>Lottery</h1>
+<!-- <h1>Lịch Mở Thưởng</h1> -->
 
-<iframe src="http://www.minhngoc.net.vn/free/index.php" width="800"
+<div>
+<h4>Kết Quả Xổ Số</h4>
+<table class="table table-striped">
+	<caption>Miền Bắc</caption>
+	<thead>
+    <tr>
+       <th><%= @mb["date"] %></th>
+       <% @mb["lot"].each do |lot| %>
+       <th><%= lot.district_id %></th>
+       <% end %>
+    </tr>
+  </thead>
+</table>
+</div>
+<!-- <iframe src="http://www.minhngoc.net.vn/free/index.php" width="800"
  height="2000" frameborder="0" scrolling="auto" id="iframe_xosominhngoc"
- name="iframe_xosominhngoc"></iframe>
+ name="iframe_xosominhngoc"></iframe> -->
  </div>
