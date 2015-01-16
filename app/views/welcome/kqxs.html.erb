@@ -2,14 +2,14 @@
     <div class="container lottery-container">
         <div class="row">
             <div> <%= @date %></div>
-            <div class="pricing">
+            <div class="col-md-3"></div>
+            <div class="pricing col-md-9">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <h1>Miền Bắc</h1>
+                    <h1>KẾT QUẢ XỔ SỐ MIỀN BẮC <%= @date %></h1>
                     <% @mb_districts.each do |district| %>
                     <div class="pricing-table">
                         <div class="pricing-header">
-                            <p class="pricing-title"><%= district["name"] %></p>
-                            <p class="pricing-rate"><span><%= district["code"] %></span></p>
+                            <p class="pricing-title"><%= district["name"] %> ( <span><%= district["code"] %></span> )</p>
                         </div>
 
                         <div class="pricing-list">
@@ -62,12 +62,11 @@
                     </div>
                     <% end %>
 
-                    <h1>Miền Trung</h1>
+                    <h1>KẾT QUẢ XỔ SỐ MIỀN TRUNG <%= @date %></h1>
                     <% @mt_districts.each do |district| %>
                     <div class="pricing-table">
                         <div class="pricing-header">
-                            <p class="pricing-title"><%= district["name"] %></p>
-                            <p class="pricing-rate"><span><%= district["code"] %></span></p>
+                            <p class="pricing-title"><%= district["name"] %> ( <span><%= district["code"] %></span> )</p>
                         </div>
 
                         <div class="pricing-list">
@@ -120,12 +119,11 @@
                     </div>
                     <% end %>
 
-                    <h1>Miền Nam</h1>
+                    <h1>KẾT QUẢ XỔ SỐ MIỀN NAM <%= @date %></h1>
                     <% @mn_districts.each do |district| %>
                     <div class="pricing-table">
                         <div class="pricing-header">
-                            <p class="pricing-title"><%= district["name"] %></p>
-                            <p class="pricing-rate"><span><%= district["code"] %></span></p>
+                            <p class="pricing-title"><%= district["name"] %> ( <span><%= district["code"] %></span> )</p>
                         </div>
 
                         <div class="pricing-list">
