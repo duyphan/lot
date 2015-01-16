@@ -7,6 +7,7 @@ class Import
 		# List districts
 		districts = {
 			"QN" => "Quảng Ninh",
+			"BN" => "Bắc Ninh",
 			"TD" => "Hà Nội",
 			"TB" => "Thái Bình",
 			"ND" => "Nam Định",

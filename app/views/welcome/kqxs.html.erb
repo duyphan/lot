@@ -1,0 +1,183 @@
+<section id="pricing-table">
+    <div class="container lottery-container">
+        <div class="row">
+            <div class="pricing">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <h1>Miền Bắc</h1>
+                    <% @mb_districts.each do |district| %>
+                    <div class="pricing-table">
+                        <div class="pricing-header">
+                            <p class="pricing-title"><%= district["name"] %></p>
+                            <p class="pricing-rate"><span><%= district["code"] %></span></p>
+                        </div>
+
+                        <div class="pricing-list">
+                            <ul>
+                                <% if !district["eighth"].nil? %>
+                                <li>8. 
+                                <% district["eighth"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <% end %>
+                                <li>7. 
+                                <% district["seventh"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>6. 
+                                <% district["sixth"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>5. 
+                                <% district["fifth"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>4. 
+                                <% district["fourth"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>3. 
+                                <% district["third"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>2. 
+                                <% district["second"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>1. 
+                                    <span> <%= district["first"]%></span>
+                                </li>
+                                <li>DB. 
+                                    <span> <%= district["special"]%></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <% end %>
+
+                    <h1>Miền Trung</h1>
+                    <% @mt_districts.each do |district| %>
+                    <div class="pricing-table">
+                        <div class="pricing-header">
+                            <p class="pricing-title"><%= district["name"] %></p>
+                            <p class="pricing-rate"><span><%= district["code"] %></span></p>
+                        </div>
+
+                        <div class="pricing-list">
+                            <ul>
+                                <% if !district["eighth"].nil? %>
+                                <li>8. 
+                                <% district["eighth"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <% end %>
+                                <li>7. 
+                                <% district["seventh"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>6. 
+                                <% district["sixth"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>5. 
+                                <% district["fifth"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>4. 
+                                <% district["fourth"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>3. 
+                                <% district["third"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>2. 
+                                <% district["second"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>1. 
+                                    <span> <%= district["first"]%></span>
+                                </li>
+                                <li>DB. 
+                                    <span> <%= district["special"]%></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <% end %>
+
+                    <h1>Miền Nam</h1>
+                    <% @mn_districts.each do |district| %>
+                    <div class="pricing-table">
+                        <div class="pricing-header">
+                            <p class="pricing-title"><%= district["name"] %></p>
+                            <p class="pricing-rate"><span><%= district["code"] %></span></p>
+                        </div>
+
+                        <div class="pricing-list">
+                            <ul>
+                                <% if !district["eighth"].nil? %>
+                                <li>8. 
+                                <% district["eighth"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <% end %>
+                                <li>7. 
+                                <% district["seventh"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>6. 
+                                <% district["sixth"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>5. 
+                                <% district["fifth"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>4. 
+                                <% district["fourth"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>3. 
+                                <% district["third"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>2. 
+                                <% district["second"].each do |number| %>
+                                    <span><%= number %></span>
+                                <% end %>
+                                </li>
+                                <li>1. 
+                                    <span> <%= district["first"]%></span>
+                                </li>
+                                <li>DB. 
+                                    <span> <%= district["special"]%></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

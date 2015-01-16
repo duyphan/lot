@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'logout', to: 'sessions#destroy', as: 'logout'
 
   get 'lichmothuong', to: 'welcome#lichmothuong'
+  get 'kqxs', to: 'welcome#kqxs'
   get 'rss', to: 'welcome#rss'
 
   # The priority is based upon order of creation: first created -> highest priority.
