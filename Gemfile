@@ -60,6 +60,7 @@ end
 
 # Using this gem to work with active record import database.
 gem 'activerecord-import', '~> 0.4.0', :require => false
+gem 'rufus-scheduler'
 
 gem 'rest-client'
 gem 'json'
