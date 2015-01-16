@@ -84,10 +84,14 @@ test: &test
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-# production:
-#   <<: *default
-#   database: lot_production
-#   username: lot
-#   password: <%= ENV['LOT_DATABASE_PASSWORD'] %>
+production:
+  <<: *default
+  database: d4d6k3n2plpq8j
+  host: ec2-54-235-127-33.compute-1.amazonaws.com
+  port: 5432
+  username: zmyxgzzsbcenzu
+  password: XpWt0yDC3a1NxD10iGrIAX_8Ax
+
+
 cucumber:
   <<: *test
