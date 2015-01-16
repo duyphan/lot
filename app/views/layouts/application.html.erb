@@ -54,7 +54,7 @@
             </div>
             <ul>
               <li><a href="#" target="_blank"><img src="assets/style/images/icon-rss.png" alt="RSS" /></a></li>
-              <li><a href="#" target="_blank"><img src="assets/style/images/icon-facebook.png" alt="Facebook" /></a></li>
+              <li><a href="https://www.facebook.com/duyphan1206" target="_blank"><img src="assets/style/images/icon-facebook.png" alt="Facebook" /></a></li>
               <li><a href="#" target="_blank"><img src="assets/style/images/icon-twitter.png" alt="Twitter" /></a></li>
               <li><a href="#" target="_blank"><img src="assets/style/images/icon-dribbble.png" alt="Dribbble" /></a></li>
               <li><a href="#" target="_blank"><img src="assets/style/images/icon-linkedin.png" alt="LinkedIn" /></a></li>
@@ -64,12 +64,9 @@
           <nav id="access" class="access" role="navigation">
                 <div id="menu" class="menu">
                   <ul id="tiny">
-                <li><a href="index.html">Blog</a>
-                  <ul>
-                    <li><a href="post.html">Blog Post</a></li>
-                  </ul>
+                <li><a href="/">Blog</a>
                 </li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="/gallery">Gallery</a></li>
                 <li><a href="/kqxs">VN Lottery</a>
                   <ul>
                     <li><a href="/kqxs">Kết Quả Xổ Số</a></li>
@@ -77,8 +74,8 @@
                     <li><a href="/doanmong">Mộng</a></li>
                   </ul>
                 </li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
                 <% if current_user %>
                   <% if administrator? %>
                     <li><%= link_to 'Users', users_path %></li>

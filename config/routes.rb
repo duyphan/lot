@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get 'lichmothuong', to: 'welcome#lichmothuong'
   get 'kqxs', to: 'welcome#kqxs'
   get 'rss', to: 'welcome#rss'
+  get 'about', to: 'welcome#about'
+  get 'gallery', to: 'welcome#gallery'
+  get 'contact', to: 'welcome#contact'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

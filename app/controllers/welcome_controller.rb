@@ -20,6 +20,18 @@ class WelcomeController < ApplicationController
 		
 	end
 
+	def about
+		
+	end
+
+	def gallery
+		
+	end
+
+	def contact
+		
+	end
+	
 	def kqxs
 		@mb_districts = []
 		@mt_districts = []
