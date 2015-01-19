@@ -64,7 +64,7 @@ class WelcomeController < ApplicationController
 		end
 
 		#Get list of the mt
-		mt_lotteries = Region.find_by_code("MT").lotteries.where(:open_date => "2015-01-15")
+		mt_lotteries = Region.find_by_code("MT").lotteries.where(:open_date => c_date)
 		mt_lotteries.each do |lot|
 			dis = District.find(lot["district_id"])
 			name = dis.name
@@ -87,7 +87,7 @@ class WelcomeController < ApplicationController
 		end
 
 		# Get list of the mn
-		mn_lotteries = Region.find_by_code("MN").lotteries.where(:open_date => "2015-01-15")
+		mn_lotteries = Region.find_by_code("MN").lotteries.where(:open_date => c_date)
 		mn_lotteries.each do |lot|
 			dis = District.find(lot["district_id"])
 			name = dis.name
