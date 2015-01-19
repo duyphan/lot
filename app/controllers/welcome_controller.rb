@@ -33,13 +33,14 @@ class WelcomeController < ApplicationController
 	end
 	
 	def kqxs
+		c_date = Lottery.select(:open_date).last.open_date.to_date
 		@mb_districts = []
 		@mt_districts = []
 		@mn_districts = []
-		@date = "2015-01-15".to_date
+		@date = c_date.to_date
 
 		#Get list of the mb
-		mb_lotteries = Region.find_by_code("MB").lotteries.where(:open_date => "2015-01-15")
+		mb_lotteries = Region.find_by_code("MB").lotteries.where(:open_date => c_date)
 		
 		mb_lotteries.each do |lot|
 			dis = District.find(lot["district_id"])
