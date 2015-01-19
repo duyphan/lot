@@ -61,3 +61,7 @@
 	opacity: 100;
 	visibility: visible;
 }
+
+.nav-tabs > li {
+	width: 200px;
+}

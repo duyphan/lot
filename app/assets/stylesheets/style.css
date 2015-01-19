@@ -167,7 +167,6 @@ ul {
 	list-style: none;
 }
 ul li {
-	background: transparent url(style/images/dark-bullet.png) no-repeat left 13px;
 	padding-left: 15px;
 }
 ol {
@@ -1660,9 +1659,7 @@ p.form-submit {
 .widget ul ul {
 	margin-left: 1.5em;
 }
-.widget ul li {
-	background-image: url(style/images/light-bullet.png);
-}
+
 .widget a {
 	text-decoration: none;
 	color: #999;
