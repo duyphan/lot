@@ -56,21 +56,21 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # Create different versions of your uploaded files:
   version :small do
     process :resize_to_fill => [62, 62]
-    process :quality => 80
+    # process :quality => 80
     # process :auto_orientation
     # process :convert => "png"
   end
 
   version :normal do
     process :resize_to_fill => [110, 110]
-    process :quality => 80
+    # process :quality => 80
     # process :auto_orientation
     # process :convert => "png"
   end
 
   version :large do
     process :resize_to_fill => [220, 220]
-    process :quality => 80
+    # process :quality => 80
     # process :auto_orientation
     # process :convert => "png"
   end
