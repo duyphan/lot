@@ -88,6 +88,7 @@ GEM
       mime-types (>= 1.16, < 3)
       nokogiri (~> 1.5)
       rails (>= 3, < 5)
+    daemons (1.1.9)
     database_cleaner (1.4.0)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
@@ -381,6 +382,7 @@ DEPENDENCIES
   carrierwave_backgrounder
   coffee-rails (~> 4.1.0)
   cucumber-rails
+  daemons
   database_cleaner
   delayed_job_active_record
   factory_girl_rails

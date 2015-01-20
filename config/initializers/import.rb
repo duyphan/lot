@@ -5,7 +5,8 @@ scheduler.cron '00 0 23 * * 1-5' do
 	puts "Run"
   time = Benchmark.measure do
 		import = Import.new
-		import.action
+		
+		import.delay.action
 	end
 	puts time
 	puts "End"

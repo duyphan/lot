@@ -4,6 +4,8 @@ class Import
 	end
 	def action
 		
+		puts "Background"
+		
 		# List districts
 		districts = {
 			"QN" => "Quảng Ninh",

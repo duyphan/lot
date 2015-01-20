@@ -5,7 +5,10 @@ namespace :import do
 
 		time = Benchmark.measure do
 			import = Import.new
-			import.action
+
+			puts "Run background"
+			
+			import.delay.action
 		end
 		puts time
 	end

@@ -74,3 +74,5 @@ gem 'fog'
 gem 'mini_magick'
 
 gem 'delayed_job_active_record'
+
+gem "daemons"
