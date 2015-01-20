@@ -12,6 +12,8 @@ class UsersController < ApplicationController
 
 	def create
 		@user = User.new(user_params)
+		puts "AAA"
+		puts user_params.inspect
     if @user.save
       redirect_to users_url, notice: 'New user created.'
     else
@@ -22,6 +24,6 @@ class UsersController < ApplicationController
 	private
     def user_params
       params[:user].delete :admin unless current_user.try(:admin?)
-      params.require(:user).permit(:email, :password, :password_confirmation, :admin)
+      params.require(:user).permit(:f_name, :l_name, :email, :password, :password_confirmation, :avatar, :admin)
     end
 end

@@ -62,8 +62,8 @@
             </ul>
           </div>
           <nav id="access" class="access" role="navigation">
-                <div id="menu" class="menu">
-                  <ul id="tiny">
+            <div id="menu" class="menu">
+              <ul id="tiny">
                 <li><a href="/">Blog</a>
                 </li>
                 <li><a href="/gallery">Gallery</a></li>
@@ -74,11 +74,14 @@
                     <li><a href="/doanmong">Mộng</a></li>
                   </ul>
                 </li>
+                <% unless administrator? %>
                 <li><a href="/about">About</a></li>
                 <li><a href="/contact">Contact</a></li>
+                <% end %>
                 <% if current_user %>
                   <% if administrator? %>
                     <li><%= link_to 'Users', users_path %></li>
+                    <li><%= link_to 'Articles', articles_path %></li>
                   <% end %>
                   <li><%= link_to 'Log Out', logout_path %></li>
                 <% else %>

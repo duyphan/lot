@@ -64,3 +64,13 @@ gem 'rufus-scheduler'
 
 gem 'rest-client'
 gem 'json'
+
+gem 'carrierwave'
+
+gem 'carrierwave_backgrounder'
+
+gem 'fog'
+
+gem 'mini_magick'
+
+gem 'delayed_job_active_record'

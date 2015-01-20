@@ -1,6 +1,6 @@
 <%= form_for @user, :html => { :class => "form-horizontal user" } do |f| %>
 
-    <% if @user.errors.any? %>
+  <% if @user.errors.any? %>
     <div id="error_expl" class="panel panel-danger">
       <div class="panel-heading">
         <h3 class="panel-title"><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h3>
@@ -35,6 +35,13 @@
       <%= f.text_field :full_name, :class => 'form-control' %>
     </div>
     <%= error_span(@user[:full_name]) %>
+  </div>
+  <div class="control-group">
+    <%= f.label :avatar, :class => 'control-label' %>
+    <div class="controls">
+    <%= f.file_field :avatar, multiple: false %>
+    </div>
+    <%= error_span(@user[:avatar]) %>
   </div>
   <div class="control-group">
     <%= f.label :email, :class => 'control-label' %>
