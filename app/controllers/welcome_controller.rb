@@ -2,6 +2,7 @@ require 'open-uri'
 
 class WelcomeController < ApplicationController
 	def index
+		@articles = Article.all
 		# @mb = {}
 
 		# #Get list of the mb

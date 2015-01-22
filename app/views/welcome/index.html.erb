@@ -1,35 +1,39 @@
 <div id="primary">
 	<div id="content" role="main">
 		<div class="intro">Hello! Welcome to my blog. I am DP. Here on this blog you will be able to find my life event as well as everything I like across the internet world.</div>
+		<% @articles.each do |article| %>
 		<article class="post hentry format-image">
 			<header class="entry-header">
-				<h2 class="entry-title"><a href="post.html">A Wonderful DP</a></h2>
+				<h2 class="entry-title"><a href="post.html"><%= article.title %></a></h2>
 				<div class="entry-meta">
 	    		<div class="entry-format">
 	      		<span class="image-format">image</span>
 	      	</div>
 	    		<span class="sep"> | </span>
 	    		<a href="#">
-	    			<time class="entry-date">Jan 21, 2015</time>
+	    			<time class="entry-date"><%=l article.created_at %></time>
 	    		</a>
 	    		<span class="sep"> | </span>	
 	    		<span class="cat-links"> 
-	    			<a href="#">Photography</a>
+	    			<a href="#"><%= article.a_type %></a>
 	    		</span>
 	    		<span class="sep"> | </span>
 	    		<div class="comments-link">
 	        	<a href="#">4 Comments</a>
 	        </div>
 		   	</div>
-		   	<div class="entry-content">
-		      <div class="full-size">
-		      	<a href="post.html"><img width="1040" height="535" src="assets/style/images/art/post4.jpg" alt=""/></a>
-		      </div>
-		      <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents.</p>
-
-		 		</div>
 			</header>
+			<div class="entry-content">
+	      <div class="full-size">
+	      	<a href="post.html">
+	      		<%= image_tag article.photo.url, :class => "style_image" %>
+	      	</a>
+	      </div>
+	      <p><%= article.description %></p>
+
+	 		</div>
 		</article>
+		<% end %>
 		<article class="post hentry format-standard">
 			<header class="entry-header">
 				<h2 class="entry-title">
@@ -57,7 +61,7 @@
 	    <div class="entry-content">
    			<p>When, while the <strong>lovely valley</strong> teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies.</p>
 				<p>Then I feel the <a href="#">presence of the Almighty</a>, who formed us in his own image, and the breath of that universal love which bears and sustains us, as it floats around us in an eternity of bliss; and then, my friend, when darkness overspreads my eyes, and heaven and earth seem to dwell in my soul and absorb its power, like the form of a beloved mistress, then I often think with longing, Oh, would I could describe these conceptions, could impress upon paper all that is living so full and warm within me, that it might be the mirror of my soul, as my soul is the mirror of the infinite God!</p>
-				</div> <!-- .entry-content -->
+			</div> <!-- .entry-content -->
 		</article>
 
 		<!-- begin article -->
