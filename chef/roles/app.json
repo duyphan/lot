@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "description": "The role for app servers",
+  "default_attributes": {
+  },
+  "run_list": [
+    "recipe[postgresql::server]",
+    "recipe[apache2]",
+    "recipe[ruby_build]",
+    "recipe[application]",
+    "recipe[application_ruby]",
+    "recipe[locale]", 
+    "role[core]",
+    "role[rvm]",
+    "recipe[vim]",
+    "recipe[tmux]",
+    "recipe[imagemagick]"  
+  ]
+}

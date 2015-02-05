@@ -1,0 +1,19 @@
+{
+  "name": "lot-dev",
+  "default_attributes": {
+    "apache2": {
+      "listen_ports": [
+        "80",
+        "443"
+      ]
+    },
+    "dev": {
+      "user": "vagrant",
+      "root_path": "/vagrant",
+      "server_name": "dp.codeforfun.net"
+    }
+  },
+  "json_class": "Chef::Environment",
+  "description": "",
+  "chef_type": "environment"
+}
