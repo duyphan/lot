@@ -247,6 +247,7 @@ GEM
     netrc (0.10.2)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
+    pg (0.18.1)
     pry (0.10.1)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -394,6 +395,7 @@ DEPENDENCIES
   launchy
   less-rails
   mini_magick
+  pg (= 0.18.1)
   rails (= 4.2.0)
   rest-client
   rspec-rails
